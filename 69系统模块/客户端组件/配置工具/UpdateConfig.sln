@@ -1,0 +1,27 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UpdateConfig", "UpdateConfig.vcproj", "{CA7DBD63-1CC2-4267-90EB-3D6159DBA366}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Debug_Unicode = Debug_Unicode
+		Release = Release
+		Release_Unicode = Release_Unicode
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{CA7DBD63-1CC2-4267-90EB-3D6159DBA366}.Debug.ActiveCfg = Debug|Win32
+		{CA7DBD63-1CC2-4267-90EB-3D6159DBA366}.Debug.Build.0 = Debug|Win32
+		{CA7DBD63-1CC2-4267-90EB-3D6159DBA366}.Debug_Unicode.ActiveCfg = Debug_Unicode|Win32
+		{CA7DBD63-1CC2-4267-90EB-3D6159DBA366}.Debug_Unicode.Build.0 = Debug_Unicode|Win32
+		{CA7DBD63-1CC2-4267-90EB-3D6159DBA366}.Release.ActiveCfg = Release|Win32
+		{CA7DBD63-1CC2-4267-90EB-3D6159DBA366}.Release.Build.0 = Release|Win32
+		{CA7DBD63-1CC2-4267-90EB-3D6159DBA366}.Release_Unicode.ActiveCfg = Release_Unicode|Win32
+		{CA7DBD63-1CC2-4267-90EB-3D6159DBA366}.Release_Unicode.Build.0 = Release_Unicode|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,209 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\UpdateConfig.rc2""  // 非 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""         // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\UpdateConfig.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_UPDATEMAIN DIALOGEX 0, 0, 327, 323
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_MINIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "更新配置工具"
+FONT 9, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    LTEXT           "更新文件存放目录：",IDC_STATIC,15,34,62,8
+    LTEXT           "配置文件输出目录：",IDC_STATIC,15,52,62,12
+    EDITTEXT        IDC_EDIT_OUTPUT_PATH,81,50,187,12,ES_AUTOHSCROLL
+    LTEXT           "更新文件网络地址：",IDC_STATIC,15,17,62,8
+    EDITTEXT        IDC_EDIT_INPUT_NET_ADDR,81,15,187,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "浏览",IDC_BROWSE_INPUTPATH,277,31,29,13
+    PUSHBUTTON      "浏览",IDC_BROWSE_OUTPUTPATH,277,49,29,13
+    EDITTEXT        IDC_EDIT_INPUT_PATH,81,32,187,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "构造配置",IDC_BUTTON_DONE,259,75,62,41
+    CONTROL         "所有文件",IDC_RADIO_ALL,"Button",BS_AUTORADIOBUTTON,15,
+                    84,43,10
+    CONTROL         "平台文件",IDC_RADIO_PLATFORM,"Button",
+                    BS_AUTORADIOBUTTON,15,101,43,10
+    CONTROL         "游戏文件",IDC_RADIO_MULTI_GAME,"Button",
+                    BS_AUTORADIOBUTTON,80,84,43,10
+    CONTROL         "扩展文件",IDC_RADIO_SINGLE_GAME,"Button",
+                    BS_AUTORADIOBUTTON | WS_DISABLED,80,101,43,10
+    COMBOBOX        IDC_COMBO_SINGLE_GAME,124,100,119,126,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "路径配置",IDC_STATIC,6,4,315,66
+    GROUPBOX        "文件筛选",IDC_STATIC,6,71,246,45
+    COMBOBOX        IDC_COMBO_MULTI_GAME,124,82,119,138,CBS_DROPDOWNLIST | 
+                    CBS_OWNERDRAWVARIABLE | CBS_SORT | CBS_HASSTRINGS | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_PROGRESS,"msctls_progress32",WS_BORDER,6,313,315,
+                    8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,6,0,3
+ PRODUCTVERSION 6,6,0,3
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "Comments", "网狐科技有限公司"
+            VALUE "CompanyName", "网狐科技有限公司"
+            VALUE "FileDescription", "升级配置工具"
+            VALUE "FileVersion", "6, 6, 0, 3"
+            VALUE "InternalName", "UpdateConfig.exe"
+            VALUE "LegalCopyright", "网狐科技有限公司保留所有权利。"
+            VALUE "OriginalFilename", "UpdateConfig.exe"
+            VALUE "ProductName", "升级配置工具"
+            VALUE "ProductVersion", "6, 6, 0, 3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_DIALOG_UPDATEMAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 326
+        TOPMARGIN, 7
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_POINTER_COPY        CURSOR                  "res\\pointer_.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 UpdateConfig(&A)..."
+END
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\UpdateConfig.rc2"  // 非 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"         // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
