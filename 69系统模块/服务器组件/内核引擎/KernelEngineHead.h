@@ -12,8 +12,8 @@
 #include <WinSock2.h>
 
 //平台文件
-#include "..\..\..\系统模块\全局定义\Platform.h"
-#include "..\..\..\系统模块\公共组件\服务核心\ServiceCoreHead.h"
+#include "..\..\..\69系统模块\全局定义\Platform.h"
+#include "..\..\..\69系统模块\公共组件\服务核心\ServiceCoreHead.h"
 
 //////////////////////////////////////////////////////////////////////////////////
 //ADO 定义

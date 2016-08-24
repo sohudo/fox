@@ -1,15 +1,15 @@
 #pragma once
-
+#define NO_WARN_MBCS_MFC_DEPRECATION  
 #ifndef VC_EXTRALEAN
 #define VC_EXTRALEAN
 #endif
 
 #ifndef WINVER				// 允许使用特定于 Windows 95 和 Windows NT 4 或更高版本的功能。
-#define WINVER 0x0400		// 将此更改为针对于 Windows 98 和 Windows 2000 或更高版本的合适的值。
+#define WINVER 0x601		// 将此更改为针对于 Windows 98 和 Windows 2000 或更高版本的合适的值。
 #endif
 
 #ifndef _WIN32_WINNT		// 允许使用特定于 Windows NT 4 或更高版本的功能。
-#define _WIN32_WINNT 0x0400	// 将此更改为针对于 Windows 2000 或更高版本的合适的值。
+#define _WIN32_WINNT 0x601	// 将此更改为针对于 Windows 2000 或更高版本的合适的值。
 #endif						
 
 #ifndef _WIN32_WINDOWS		// 允许使用特定于 Windows 98 或更高版本的功能。

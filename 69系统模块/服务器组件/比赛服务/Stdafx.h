@@ -1,71 +1,118 @@
-#pragma once
-
-#ifndef VC_EXTRALEAN
-#define VC_EXTRALEAN		// ´Ó Windows Í·ÖĞÅÅ³ı¼«ÉÙÊ¹ÓÃµÄ×ÊÁÏ
-#endif
-
-// Èç¹ûÄú±ØĞëÊ¹ÓÃÏÂÁĞËùÖ¸¶¨µÄÆ½Ì¨Ö®Ç°µÄÆ½Ì¨£¬ÔòĞŞ¸ÄÏÂÃæµÄ¶¨Òå¡£
-// ÓĞ¹Ø²»Í¬Æ½Ì¨µÄÏàÓ¦ÖµµÄ×îĞÂĞÅÏ¢£¬Çë²Î¿¼ MSDN¡£
-#ifndef WINVER				// ÔÊĞíÊ¹ÓÃÌØ¶¨ÓÚ Windows 95 ºÍ Windows NT 4 »ò¸ü¸ß°æ±¾µÄ¹¦ÄÜ¡£
-#define WINVER 0x0400		// ½«´Ë¸ü¸ÄÎªÕë¶ÔÓÚ Windows 98 ºÍ Windows 2000 »ò¸ü¸ß°æ±¾µÄºÏÊÊµÄÖµ¡£
-#endif
-
-#ifndef _WIN32_WINNT		// ÔÊĞíÊ¹ÓÃÌØ¶¨ÓÚ Windows NT 4 »ò¸ü¸ß°æ±¾µÄ¹¦ÄÜ¡£
-#define _WIN32_WINNT 0x0400	// ½«´Ë¸ü¸ÄÎªÕë¶ÔÓÚ Windows 2000 »ò¸ü¸ß°æ±¾µÄºÏÊÊµÄÖµ¡£
-#endif						
-
-#ifndef _WIN32_WINDOWS		// ÔÊĞíÊ¹ÓÃÌØ¶¨ÓÚ Windows 98 »ò¸ü¸ß°æ±¾µÄ¹¦ÄÜ¡£
-#define _WIN32_WINDOWS 0x0410 // ½«´Ë¸ü¸ÄÎªÕë¶ÔÓÚ Windows Me »ò¸ü¸ß°æ±¾µÄºÏÊÊµÄÖµ¡£
-#endif
-
-#ifndef _WIN32_IE			// ÔÊĞíÊ¹ÓÃÌØ¶¨ÓÚ IE 4.0 »ò¸ü¸ß°æ±¾µÄ¹¦ÄÜ¡£
-#define _WIN32_IE 0x0400	// ½«´Ë¸ü¸ÄÎªÕë¶ÔÓÚ IE 5.0 »ò¸ü¸ß°æ±¾µÄºÏÊÊµÄÖµ¡£
-#endif
-
-#define _ATL_CSTRING_EXPLICIT_CONSTRUCTORS	// Ä³Ğ© CString ¹¹Ôìº¯Êı½«ÎªÏÔÊ½µÄ
-
-#include <afxwin.h>         // MFC ºËĞÄ×é¼şºÍ±ê×¼×é¼ş
-#include <afxext.h>         // MFC À©Õ¹
-
-#ifndef _AFX_NO_OLE_SUPPORT
-#include <afxole.h>         // MFC OLE Àà
-#include <afxodlgs.h>       // MFC OLE ¶Ô»°¿òÀà
-#include <afxdisp.h>        // MFC ×Ô¶¯»¯Àà
-#endif // _AFX_NO_OLE_SUPPORT
-
-#include <afxdtctl.h>		// MFC ¶Ô Internet Explorer 4 ¹«¹²¿Ø¼şµÄÖ§³Ö
-#ifndef _AFX_NO_AFXCMN_SUPPORT
-#include <afxcmn.h>			// MFC ¶Ô Windows ¹«¹²¿Ø¼şµÄÖ§³Ö
-#endif // _AFX_NO_AFXCMN_SUPPORT
-
-//////////////////////////////////////////////////////////////////////////
-
-//×é¼şÍ·ÎÄ¼ş
+ï»¿#pragma once
 
-#include "..\..\·şÎñÆ÷×é¼ş\ÓÎÏ··şÎñ\GameServiceHead.h"
+
+
+#ifndef VC_EXTRALEAN
+
+#define VC_EXTRALEAN		// ä» Windows å¤´ä¸­æ’é™¤æå°‘ä½¿ç”¨çš„èµ„æ–™
+
+#endif
+
+
+
+// å¦‚æœæ‚¨å¿…é¡»ä½¿ç”¨ä¸‹åˆ—æ‰€æŒ‡å®šçš„å¹³å°ä¹‹å‰çš„å¹³å°ï¼Œåˆ™ä¿®æ”¹ä¸‹é¢çš„å®šä¹‰ã€‚
+
+// æœ‰å…³ä¸åŒå¹³å°çš„ç›¸åº”å€¼çš„æœ€æ–°ä¿¡æ¯ï¼Œè¯·å‚è€ƒ MSDNã€‚
+
+#ifndef WINVER				// å…è®¸ä½¿ç”¨ç‰¹å®šäº Windows 95 å’Œ Windows NT 4 æˆ–æ›´é«˜ç‰ˆæœ¬çš„åŠŸèƒ½ã€‚
+
+#define WINVER 0x601		// å°†æ­¤æ›´æ”¹ä¸ºé’ˆå¯¹äº Windows 98 å’Œ Windows 2000 æˆ–æ›´é«˜ç‰ˆæœ¬çš„åˆé€‚çš„å€¼ã€‚
+
+#endif
+
+
+
+#ifndef _WIN32_WINNT		// å…è®¸ä½¿ç”¨ç‰¹å®šäº Windows NT 4 æˆ–æ›´é«˜ç‰ˆæœ¬çš„åŠŸèƒ½ã€‚
+
+#define _WIN32_WINNT 0x601	// å°†æ­¤æ›´æ”¹ä¸ºé’ˆå¯¹äº Windows 2000 æˆ–æ›´é«˜ç‰ˆæœ¬çš„åˆé€‚çš„å€¼ã€‚
+
+#endif						
+
+
+
+#ifndef _WIN32_WINDOWS		// å…è®¸ä½¿ç”¨ç‰¹å®šäº Windows 98 æˆ–æ›´é«˜ç‰ˆæœ¬çš„åŠŸèƒ½ã€‚
+
+#define _WIN32_WINDOWS 0x0410 // å°†æ­¤æ›´æ”¹ä¸ºé’ˆå¯¹äº Windows Me æˆ–æ›´é«˜ç‰ˆæœ¬çš„åˆé€‚çš„å€¼ã€‚
+
+#endif
+
+
+
+#ifndef _WIN32_IE			// å…è®¸ä½¿ç”¨ç‰¹å®šäº IE 4.0 æˆ–æ›´é«˜ç‰ˆæœ¬çš„åŠŸèƒ½ã€‚
+
+#define _WIN32_IE 0x0400	// å°†æ­¤æ›´æ”¹ä¸ºé’ˆå¯¹äº IE 5.0 æˆ–æ›´é«˜ç‰ˆæœ¬çš„åˆé€‚çš„å€¼ã€‚
+
+#endif
+
+
+
+#define _ATL_CSTRING_EXPLICIT_CONSTRUCTORS	// æŸäº› CString æ„é€ å‡½æ•°å°†ä¸ºæ˜¾å¼çš„
+
+
+
+#include <afxwin.h>         // MFC æ ¸å¿ƒç»„ä»¶å’Œæ ‡å‡†ç»„ä»¶
+
+#include <afxext.h>         // MFC æ‰©å±•
+
+
+
+#ifndef _AFX_NO_OLE_SUPPORT
+
+#include <afxole.h>         // MFC OLE ç±»
+
+#include <afxodlgs.h>       // MFC OLE å¯¹è¯æ¡†ç±»
+
+#include <afxdisp.h>        // MFC è‡ªåŠ¨åŒ–ç±»
+
+#endif // _AFX_NO_OLE_SUPPORT
+
+
+
+#include <afxdtctl.h>		// MFC å¯¹ Internet Explorer 4 å…¬å…±æ§ä»¶çš„æ”¯æŒ
+
+#ifndef _AFX_NO_AFXCMN_SUPPORT
+
+#include <afxcmn.h>			// MFC å¯¹ Windows å…¬å…±æ§ä»¶çš„æ”¯æŒ
+
+#endif // _AFX_NO_AFXCMN_SUPPORT
+
+
+
+//////////////////////////////////////////////////////////////////////////
+
+
+
+//ç»„ä»¶å¤´æ–‡ä»¶
+
+
+#include "..\..\æœåŠ¡å™¨ç»„ä»¶\æ¸¸æˆæœåŠ¡\GameServiceHead.h"
+
 //////////////////////////////////////////////////////////////////////////////////
-//Á´½Ó´úÂë
+//é“¾æ¥ä»£ç 
 
 #ifndef _DEBUG
-	#ifndef _UNICODE
-		#pragma comment (lib,"../../Á´½Ó¿â/Ansi/ServiceCore.lib")
-		#pragma comment (lib,"../../Á´½Ó¿â/Ansi/GameService.lib")
-		#pragma comment (lib,"../../Á´½Ó¿â/Ansi/KernelEngine.lib")
-	#else
-		#pragma comment (lib,"../../Á´½Ó¿â/Unicode/ServiceCore.lib")
-		#pragma comment (lib,"../../Á´½Ó¿â/Unicode/GameService.lib")
-		#pragma comment (lib,"../../Á´½Ó¿â/Unicode/KernelEngine.lib")
-	#endif
+#ifndef _UNICODE
+#pragma comment (lib,"../../é“¾æ¥åº“/Ansi/ServiceCore.lib")
+#pragma comment (lib,"../../é“¾æ¥åº“/Ansi/GameService.lib")
+#pragma comment (lib,"../../é“¾æ¥åº“/Ansi/KernelEngine.lib")
 #else
-	#ifndef _UNICODE
-		#pragma comment (lib,"../../Á´½Ó¿â/Ansi/ServiceCoreD.lib")
-		#pragma comment (lib,"../../Á´½Ó¿â/Ansi/GameServiceD.lib")
-		#pragma comment (lib,"../../Á´½Ó¿â/Ansi/KernelEngineD.lib")
-	#else
-		#pragma comment (lib,"../../Á´½Ó¿â/Unicode/ServiceCoreD.lib")
-		#pragma comment (lib,"../../Á´½Ó¿â/Unicode/GameServiceD.lib")
-		#pragma comment (lib,"../../Á´½Ó¿â/Unicode/KernelEngineD.lib")
-	#endif
-#endif
-//////////////////////////////////////////////////////////////////////////
-
+#pragma comment (lib,"../../é“¾æ¥åº“/Unicode/ServiceCore.lib")
+#pragma comment (lib,"../../é“¾æ¥åº“/Unicode/GameService.lib")
+#pragma comment (lib,"../../é“¾æ¥åº“/Unicode/KernelEngine.lib")
+#endif
+#else
+#ifndef _UNICODE
+#pragma comment (lib,"../../é“¾æ¥åº“/Ansi/ServiceCoreD.lib")
+#pragma comment (lib,"../../é“¾æ¥åº“/Ansi/GameServiceD.lib")
+#pragma comment (lib,"../../é“¾æ¥åº“/Ansi/KernelEngineD.lib")
+#else
+#pragma comment (lib,"../../é“¾æ¥åº“/Unicode/ServiceCoreD.lib")
+#pragma comment (lib,"../../é“¾æ¥åº“/Unicode/GameServiceD.lib")
+#pragma comment (lib,"../../é“¾æ¥åº“/Unicode/KernelEngineD.lib")
+#endif
+#endif
+
+//////////////////////////////////////////////////////////////////////////
+
+
+
