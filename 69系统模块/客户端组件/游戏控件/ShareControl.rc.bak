@@ -1,0 +1,346 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 中文(中华人民共和国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#include ""res\\ShareControl.rc2""  // 不是由 Microsoft Visual C++ 编辑过的资源\r\n"
+    "#include ""afxres.rc""     // 标准组件\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 6,6,0,3
+ PRODUCTVERSION 6,6,0,3
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080403a8"
+        BEGIN
+            VALUE "Comments", "深圳市网狐科技有限公司"
+            VALUE "CompanyName", "深圳市网狐科技有限公司"
+            VALUE "FileDescription", "服务核心"
+            VALUE "FileVersion", "6, 6, 0, 3"
+            VALUE "InternalName", "ShareControl.dll"
+            VALUE "LegalCopyright", "深圳市网狐科技有限公司保留所有权利。"
+            VALUE "OriginalFilename", "ShareControl.dll"
+            VALUE "ProductName", "服务核心"
+            VALUE "ProductVersion", "6, 6, 0, 3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 936
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_MESSAGE_BOX DIALOGEX 0, 0, 214, 96
+STYLE DS_SETFONT | WS_POPUP | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+END
+
+IDD_EXPRESSION DIALOGEX 0, 0, 186, 102
+STYLE DS_SYSMODAL | DS_SETFONT | WS_POPUP | WS_CLIPSIBLINGS | 
+    WS_CLIPCHILDREN
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+END
+
+IDD_BROWSER DIALOGEX 0, 0, 352, 318
+STYLE DS_SETFONT | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+END
+
+IDD_INSURE_MAIN DIALOGEX 0, 0, 327, 249
+STYLE DS_SETFONT | WS_POPUP | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    CONTROL         "",IDC_TAB_CONTROL,"SysTabControl32",TCS_TOOLTIPS,2,26,
+                    252,18
+    PUSHBUTTON      "",IDC_BT_QUERY_INFO,259,57,43,39
+    CONTROL         "",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,217,
+                    27,8,8
+END
+
+IDD_PASSWORD_KEYBOARD DIALOGEX 0, 0, 240, 82
+STYLE DS_SETFONT | WS_POPUP | WS_BORDER | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+END
+
+IDD_INSURE_SAVE DIALOGEX 0, 0, 327, 177
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_SCORE,70,51,75,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    LTEXT           "",IDC_PASSWORD,105,134,131,16,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE | WS_BORDER | WS_TABSTOP
+    PUSHBUTTON      "",IDC_BT_TAKE_SCORE,75,74,57,16
+    PUSHBUTTON      "",IDC_BT_SAVE_SCORE,182,74,57,16
+    LTEXT           "存取数目：",IDC_STATIC,5,52,41,8,NOT WS_VISIBLE
+    LTEXT           "保险柜密码：",IDC_STATIC,53,138,49,8,NOT WS_VISIBLE
+    LTEXT           "",IDC_SCORE_STRING,75,105,209,8,SS_ENDELLIPSIS | NOT 
+                    WS_VISIBLE
+    LTEXT           "游戏币存入操作不需要输入银行密码",IDC_STATIC,106,156,
+                    129,8,NOT WS_VISIBLE
+    LTEXT           "忘记密码了？",IDC_FORGET_INSURE,243,138,49,8,NOT 
+                    WS_VISIBLE
+END
+
+IDD_INSURE_TRANSFER DIALOGEX 0, 0, 327, 198
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_NICKNAME,72,34,100,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_SCORE,72,70,100,12,ES_AUTOHSCROLL | NOT WS_BORDER
+    LTEXT           "",IDC_PASSWORD,105,144,131,16,SS_CENTERIMAGE | NOT 
+                    WS_VISIBLE | WS_BORDER | WS_TABSTOP
+    PUSHBUTTON      "",IDC_BT_TRANSFER_SCORE,114,114,61,16
+    LTEXT           "赠送游戏币数目：",IDC_STATIC,0,70,65,8,NOT WS_VISIBLE
+    LTEXT           "保险柜密码：",IDC_STATIC,53,148,49,8,NOT WS_VISIBLE
+    LTEXT           "",IDC_SCORE_STRING,67,89,209,8,SS_ENDELLIPSIS
+    LTEXT           "忘记密码了？",IDC_FORGET_INSURE,243,148,49,8,NOT 
+                    WS_VISIBLE
+    LTEXT           "赠送玩家昵称：",IDC_TRANSFER_TYPE_TIP,8,34,57,8,NOT 
+                    WS_VISIBLE
+    CONTROL         "依据ID",IDC_BY_ID,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE | WS_GROUP,107,172,40,10
+    CONTROL         "依据昵称",IDC_BY_NAME,"Button",BS_AUTORADIOBUTTON | NOT 
+                    WS_VISIBLE,187,172,48,10
+    LTEXT           "",IDC_NICKNAME2,72,52,100,9
+END
+
+IDD_INSURE_PASSWORD DIALOGEX 0, 0, 297, 162
+STYLE DS_SETFONT | WS_CHILD | WS_CLIPSIBLINGS | WS_CLIPCHILDREN | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "",IDC_BT_TAKE_SCORE,122,74,46,18
+    PUSHBUTTON      "取消",IDC_BT_SAVE_SCORE,107,129,46,14,NOT WS_VISIBLE
+    LTEXT           "输入旧密码：",IDC_STATIC,51,13,49,8,NOT WS_VISIBLE
+    LTEXT           "重复新密码：",IDC_STATIC,51,57,49,8,NOT WS_VISIBLE
+    LTEXT           "输入新密码：",IDC_STATIC,51,34,49,8,NOT WS_VISIBLE
+    EDITTEXT        IDC_INSURE_PASSWORD1,101,13,147,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_INSURE_PASSWORD2,101,32,147,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER
+    EDITTEXT        IDC_INSURE_PASSWORD3,101,52,147,12,ES_PASSWORD | 
+                    ES_AUTOHSCROLL | NOT WS_BORDER
+END
+
+IDD_PASSWORD_KEYBOARD2 DIALOGEX 0, 0, 241, 83
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_CLIPSIBLINGS | WS_CLIPCHILDREN
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+END
+
+IDD_INSURE_RECORD DIALOGEX 0, 0, 186, 93
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD | WS_SYSMENU
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+END
+
+IDD_TRANS_MESSAGE DIALOGEX 0, 0, 214, 96
+STYLE DS_SETFONT | WS_POPUP | WS_SYSMENU
+FONT 9, "宋体", 400, 0, 0x0
+BEGIN
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND_CUR            CURSOR                  "res\\HAND_CUR.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_USER_STATUS_IMAGE   BITMAP                  "res\\USER_STATUS_IMAGE.bmp"
+IDB_IMAGE_SYSTEM        BITMAP                  "res\\IMAGE_SYSTEM.bmp"
+IDB_IMAGE_PROMPT        BITMAP                  "res\\IMAGE_PROMPT.bmp"
+IDB_IMAGE_AFFICHE       BITMAP                  "res\\IMAGE_AFFICHE.bmp"
+IDB_CHAT_CONTROL_BACK   BITMAP                  "res\\CHAT_CONTROL_BACK.bmp"
+IDB_BT_CHAT_HISTORY     BITMAP                  "res\\BT_CHAT_HISTORY.bmp"
+IDB_BT_CHAT_CLOSE       BITMAP                  "res\\BT_CHAT_CLOSE.bmp"
+IDB_BT_KEYBOARD         BITMAP                  "res\\BT_KEYBOARD.bmp"
+IDB_BT_KEYBOARD_CLOSE   BITMAP                  "res\\BT_KEYBOARD_CLOSE.bmp"
+IDB_KEYBOARD_ITEM1      BITMAP                  "res\\KEYBOARD_ITEM1.bmp"
+IDB_KEYBOARD_ITEM2      BITMAP                  "res\\KEYBOARD_ITEM2.bmp"
+IDB_KEYBOARD_ITEM3      BITMAP                  "res\\KEYBOARD_ITEM3.bmp"
+IDB_KEYBOARD2_ITEM1     BITMAP                  "res\\KEYBOARD2_ITEM1.bmp"
+IDB_KEYBOARD2_ITEM2     BITMAP                  "res\\KEYBOARD2_ITEM2.bmp"
+IDB_PASSWORD_KEYBORAD_BK BITMAP                  "res\\PASSWORD_KEYBORAD_BK.bmp"
+IDB_BT_INSURE_SCORE     BITMAP                  "res\\DLG_INSURE\\BT_INSURE_SCORE.bmp"
+IDB_BT_QUERY_INFO       BITMAP                  "res\\DLG_INSURE\\BT_QUERY_INFO.bmp"
+IDB_IMAGE_TRUMPET       BITMAP                  "Res\\IMAGE_TRUMPET.bmp"
+IDB_IMAGE_TYPHON        BITMAP                  "Res\\IMAGE_TYPHON.bmp"
+IDB_TAKE_SAVE_BACK      BITMAP                  "res\\DLG_INSURE\\TAKE_SAVE.bmp"
+IDB_TRANS_BACK          BITMAP                  "res\\DLG_INSURE\\TRANS_BACK.bmp"
+IDB_PASSWORD            BITMAP                  "res\\DLG_INSURE\\PASSWORD.bmp"
+IDB_BT_SAVE             BITMAP                  "res\\DLG_INSURE\\BT_SAVE_SCORE.bmp"
+IDB_BT_TAKE             BITMAP                  "res\\DLG_INSURE\\BT_TAKE_SCORE.bmp"
+IDB_BT_TRANS            BITMAP                  "res\\DLG_INSURE\\BT_TRANS_SCORE.bmp"
+IDB_BT_MODIFY           BITMAP                  "res\\DLG_INSURE\\BT_MODIFY.bmp"
+IDB_TRANS_BK            BITMAP                  "res\\DLG_INSURE\\TransInfoBk.bmp"
+IDB_BT_CLOSE            BITMAP                  "res\\DLG_INSURE\\BT_CLOSE.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PNG
+//
+
+USER_EXPERIENCE         PNG                     "res\\USER_EXPERIENCE.png"
+WEB_LOAD_LINE_1         PNG                     "res\\WEB_LOAD_LINE_1.PNG"
+WEB_LOAD_LINE_2         PNG                     "res\\WEB_LOAD_LINE_2.PNG"
+BT_SAVE_SCORE           PNG                     "res\\DLG_INSURE\\BT_SAVE_SCORE.png"
+BT_TAKE_SCORE           PNG                     "res\\DLG_INSURE\\BT_TAKE_SCORE.png"
+SCORE_NUMBER            PNG                     "res\\DLG_INSURE\\SCORE_NUMBER.PNG"
+INFO_FRAME              PNG                     "res\\DLG_INSURE\\INFO_FRAME.png"
+INSURE_ICON             PNG                     "res\\DLG_INSURE\\INSURE_ICON.PNG"
+BT_TRANSFER_SCORE       PNG                     "res\\DLG_INSURE\\BT_TRANSFER_SCORE.PNG"
+INSURE_LOGON_BACK       PNG                     "res\\DLG_INSURE\\INSURE_LOGON_BACK.png"
+INSURE_MAIN_BACK        PNG                     "res\\DLG_INSURE\\INSURE_MAIN_BACK.png"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_PASSWORD_KEYBOARD, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 81
+    END
+
+    IDD_INSURE_SAVE, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_INSURE_TRANSFER, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_INSURE_PASSWORD, DIALOG
+    BEGIN
+        RIGHTMARGIN, 244
+        BOTTOMMARGIN, 120
+    END
+
+    IDD_PASSWORD_KEYBOARD2, DIALOG
+    BEGIN
+        RIGHTMARGIN, 240
+        BOTTOMMARGIN, 82
+    END
+
+    IDD_INSURE_RECORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 179
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 86
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // 中文(中华人民共和国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE 4, 2
+#pragma code_page(936)
+#include "res\ShareControl.rc2"  // 不是由 Microsoft Visual C++ 编辑过的资源
+#include "afxres.rc"     // 标准组件
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
