@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug_Unicode|Win32">
       <Configuration>Debug_Unicode</Configuration>
@@ -26,25 +26,25 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <UseOfMfc>Dynamic</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <UseOfMfc>Dynamic</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <UseOfMfc>Dynamic</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <UseOfMfc>Dynamic</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -65,12 +65,13 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+    <_ProjectFileVersion>14.0.23107.0</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>Debug\</OutDir>
     <IntDir>Debug\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>Release\</OutDir>
@@ -81,6 +82,7 @@
     <OutDir>$(Configuration)\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">
     <OutDir>$(Configuration)\</OutDir>
@@ -277,8 +279,8 @@ copy /y ..\..\..\运行\Release\Unicode\$(TargetFileName) ..\..\..\发布组件\
     <Image Include="Res\IMAGE_GUARDKICK_CARD.png" />
     <Image Include="Res\IMAGE_KISS.png" />
     <Image Include="Res\IMAGE_POSSESS.png" />
-    <Image Include="Res\IMAGE_RED_FLOWER.png" />
     <Image Include="Res\IMAGE_REDRING_CARD.png" />
+    <Image Include="Res\IMAGE_RED_FLOWER.png" />
     <Image Include="Res\IMAGE_RING.png" />
     <Image Include="Res\IMAGE_SCORE_CLEAR.png" />
     <Image Include="Res\IMAGE_SMOKE.png" />
@@ -307,8 +309,8 @@ copy /y ..\..\..\运行\Release\Unicode\$(TargetFileName) ..\..\..\发布组件\
     <Image Include="Res\SYMBOL_GUARDKICK_CARD.png" />
     <Image Include="Res\SYMBOL_KISS.png" />
     <Image Include="Res\SYMBOL_POSSESS.png" />
-    <Image Include="Res\SYMBOL_RED_FLOWER.png" />
     <Image Include="Res\SYMBOL_REDRING_CARD.png" />
+    <Image Include="Res\SYMBOL_RED_FLOWER.png" />
     <Image Include="Res\SYMBOL_RING.png" />
     <Image Include="Res\SYMBOL_SCORE_CLEAR.png" />
     <Image Include="Res\SYMBOL_SMOKE.png" />

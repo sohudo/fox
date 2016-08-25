@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug_Unicode|Win32">
       <Configuration>Debug_Unicode</Configuration>
@@ -20,31 +20,31 @@
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <ProjectName>升级程序</ProjectName>
-    <ProjectGuid>{AF8BEC51-6A59-4B25-A6F2-E14B8F4BD6C8}</ProjectGuid>
+    <ProjectGuid>{C45E5616-82B5-4DAE-A202-9B37C022CBAB}</ProjectGuid>
     <Keyword>MFCProj</Keyword>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <UseOfMfc>Dynamic</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug_Unicode|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <UseOfMfc>Dynamic</UseOfMfc>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <UseOfMfc>Dynamic</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v140</PlatformToolset>
     <UseOfMfc>Dynamic</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -65,12 +65,13 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <_ProjectFileVersion>12.0.21005.1</_ProjectFileVersion>
+    <_ProjectFileVersion>14.0.23107.0</_ProjectFileVersion>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <OutDir>Debug\</OutDir>
     <IntDir>Debug\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>Release\</OutDir>
@@ -81,6 +82,7 @@
     <OutDir>$(Configuration)\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">
     <OutDir>$(Configuration)\</OutDir>
@@ -221,12 +223,12 @@ copy /y ..\..\..\运行\Release\Unicode\$(TargetFileName) ..\..\..\发布组件\
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Other\Custsite.cpp" />
-    <ClCompile Include="PngImage\D2DEngine.cpp" />
     <ClCompile Include="DlgUpdateCheck.cpp" />
     <ClCompile Include="DownLoad.cpp" />
     <ClCompile Include="GameUpdate.cpp" />
+    <ClCompile Include="Other\Custsite.cpp" />
     <ClCompile Include="Other\IDispimp.cpp" />
+    <ClCompile Include="PngImage\D2DEngine.cpp" />
     <ClCompile Include="PngImage\PngImage.cpp" />
     <ClCompile Include="SkinLayered.cpp" />
     <ClCompile Include="Stdafx.cpp">
@@ -239,14 +241,14 @@ copy /y ..\..\..\运行\Release\Unicode\$(TargetFileName) ..\..\..\发布组件\
     <ClCompile Include="WHMD5CheckSum.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Other\Custsite.h" />
-    <ClInclude Include="PngImage\D2DEngine.h" />
-    <ClInclude Include="PngImage\D2DInterface.h" />
     <ClInclude Include="DlgUpdateCheck.h" />
     <ClInclude Include="DownLoad.h" />
     <ClInclude Include="DownLoadHead.h" />
     <ClInclude Include="GameUpdate.h" />
+    <ClInclude Include="Other\Custsite.h" />
     <ClInclude Include="Other\IDispimp.h" />
+    <ClInclude Include="PngImage\D2DEngine.h" />
+    <ClInclude Include="PngImage\D2DInterface.h" />
     <ClInclude Include="PngImage\PngImage.h" />
     <ClInclude Include="resource.h" />
     <ClInclude Include="SkinLayered.h" />

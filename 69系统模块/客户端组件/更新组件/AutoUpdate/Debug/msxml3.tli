@@ -1,9 +1,9 @@
-// Created by Microsoft (R) C/C++ Compiler Version 13.10.3077 (ab4973b0).
+Ôªø// Created by Microsoft (R) C/C++ Compiler Version 14.00.23026.0 (fedeac31).
 //
-// c:\documents and settings\administrator.leifeng-35ff9cc\◊¿√Ê\∞¬“Â\œµÕ≥ƒ£øÈ\∏¸–¬◊Èº˛\autoupdate\debug\msxml3.tli
+// f:\github\fox.git\trunk\69Á≥ªÁªüÊ®°Âùó\ÂÆ¢Êà∑Á´ØÁªÑ‰ª∂\Êõ¥Êñ∞ÁªÑ‰ª∂\autoupdate\debug\msxml3.tli
 //
 // Wrapper implementations for Win32 type library msxml3.dll
-// compiler-generated file created 07/29/15 at 16:42:28 - DO NOT EDIT!
+// compiler-generated file created 08/26/16 at 00:33:56 - DO NOT EDIT!
 
 #pragma once
 
@@ -1707,11 +1707,15 @@ inline HRESULT IXMLError::GetErrorInfo ( struct _xml_error * pErrorReturn ) {
 //
 
 inline HRESULT XMLDOMDocumentEvents::ondataavailable ( ) {
-    return _com_dispatch_method(this, 0xc6, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0xc6, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
 }
 
 inline HRESULT XMLDOMDocumentEvents::onreadystatechange ( ) {
-    return _com_dispatch_method(this, DISPID_READYSTATECHANGE, DISPATCH_METHOD, VT_EMPTY, NULL, NULL);
+    HRESULT _result = 0;
+    _com_dispatch_method(this, DISPID_READYSTATECHANGE, DISPATCH_METHOD, VT_ERROR, (void*)&_result, NULL);
+    return _result;
 }
 
 //

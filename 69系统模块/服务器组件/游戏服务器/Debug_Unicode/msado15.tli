@@ -1,9 +1,9 @@
-// Created by Microsoft (R) C/C++ Compiler Version 13.10.3077 (67819fbb).
+Ôªø// Created by Microsoft (R) C/C++ Compiler Version 14.00.23026.0 (6011904e).
 //
-// j:\69ø™∑¢[ø™∑¢ÕÍ≥…]\œµÕ≥ƒ£øÈ\∑˛ŒÒ∆˜◊Èº˛\”Œœ∑∑˛ŒÒ∆˜\debug_unicode\msado15.tli
+// f:\github\fox.git\trunk\69Á≥ªÁªüÊ®°Âùó\ÊúçÂä°Âô®ÁªÑ‰ª∂\Ê∏∏ÊàèÊúçÂä°Âô®\debug_unicode\msado15.tli
 //
 // Wrapper implementations for Win32 type library MSADO15.DLL
-// compiler-generated file created 09/13/15 at 14:57:56 - DO NOT EDIT!
+// compiler-generated file created 08/26/16 at 00:34:24 - DO NOT EDIT!
 
 #pragma once
 
@@ -504,48 +504,66 @@ inline _ParameterPtr Parameters::GetItem ( const _variant_t & Index ) {
 //
 
 inline HRESULT ConnectionEvents::InfoMessage ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
-    return _com_dispatch_method(this, 0x0, DISPATCH_METHOD, VT_EMPTY, NULL, 
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x0, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
         L"\x0009\x4003\x0009", pError, adStatus, pConnection);
+    return _result;
 }
 
 inline HRESULT ConnectionEvents::BeginTransComplete ( long TransactionLevel, struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
-    return _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_EMPTY, NULL, 
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x1, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
         L"\x0003\x0009\x4003\x0009", TransactionLevel, pError, adStatus, pConnection);
+    return _result;
 }
 
 inline HRESULT ConnectionEvents::CommitTransComplete ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
-    return _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_EMPTY, NULL, 
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x3, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
         L"\x0009\x4003\x0009", pError, adStatus, pConnection);
+    return _result;
 }
 
 inline HRESULT ConnectionEvents::RollbackTransComplete ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
-    return _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_EMPTY, NULL, 
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x2, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
         L"\x0009\x4003\x0009", pError, adStatus, pConnection);
+    return _result;
 }
 
 inline HRESULT ConnectionEvents::WillExecute ( BSTR * Source, enum CursorTypeEnum * CursorType, enum LockTypeEnum * LockType, long * Options, enum EventStatusEnum * adStatus, struct _Command * pCommand, struct _Recordset * pRecordset, struct _Connection * pConnection ) {
-    return _com_dispatch_method(this, 0x4, DISPATCH_METHOD, VT_EMPTY, NULL, 
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x4, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
         L"\x4008\x4003\x4003\x4003\x4003\x0009\x0009\x0009", Source, CursorType, LockType, Options, adStatus, pCommand, pRecordset, pConnection);
+    return _result;
 }
 
 inline HRESULT ConnectionEvents::ExecuteComplete ( long RecordsAffected, struct Error * pError, enum EventStatusEnum * adStatus, struct _Command * pCommand, struct _Recordset * pRecordset, struct _Connection * pConnection ) {
-    return _com_dispatch_method(this, 0x5, DISPATCH_METHOD, VT_EMPTY, NULL, 
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x5, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
         L"\x0003\x0009\x4003\x0009\x0009\x0009", RecordsAffected, pError, adStatus, pCommand, pRecordset, pConnection);
+    return _result;
 }
 
 inline HRESULT ConnectionEvents::WillConnect ( BSTR * ConnectionString, BSTR * UserID, BSTR * Password, long * Options, enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
-    return _com_dispatch_method(this, 0x6, DISPATCH_METHOD, VT_EMPTY, NULL, 
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x6, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
         L"\x4008\x4008\x4008\x4003\x4003\x0009", ConnectionString, UserID, Password, Options, adStatus, pConnection);
+    return _result;
 }
 
 inline HRESULT ConnectionEvents::ConnectComplete ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
-    return _com_dispatch_method(this, 0x7, DISPATCH_METHOD, VT_EMPTY, NULL, 
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x7, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
         L"\x0009\x4003\x0009", pError, adStatus, pConnection);
+    return _result;
 }
 
 inline HRESULT ConnectionEvents::Disconnect ( enum EventStatusEnum * adStatus, struct _Connection * pConnection ) {
-    return _com_dispatch_method(this, 0x8, DISPATCH_METHOD, VT_EMPTY, NULL, 
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x8, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
         L"\x4003\x0009", adStatus, pConnection);
+    return _result;
 }
 
 //
@@ -553,58 +571,80 @@ inline HRESULT ConnectionEvents::Disconnect ( enum EventStatusEnum * adStatus, s
 //
 
 inline HRESULT RecordsetEvents::WillChangeField ( long cFields, const _variant_t & Fields, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
-    return _com_dispatch_method(this, 0x9, DISPATCH_METHOD, VT_EMPTY, NULL, 
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x9, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
         L"\x0003\x000c\x4003\x0009", cFields, &Fields, adStatus, pRecordset);
+    return _result;
 }
 
 inline HRESULT RecordsetEvents::FieldChangeComplete ( long cFields, const _variant_t & Fields, struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
-    return _com_dispatch_method(this, 0xa, DISPATCH_METHOD, VT_EMPTY, NULL, 
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0xa, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
         L"\x0003\x000c\x0009\x4003\x0009", cFields, &Fields, pError, adStatus, pRecordset);
+    return _result;
 }
 
 inline HRESULT RecordsetEvents::WillChangeRecord ( enum EventReasonEnum adReason, long cRecords, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
-    return _com_dispatch_method(this, 0xb, DISPATCH_METHOD, VT_EMPTY, NULL, 
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0xb, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
         L"\x0003\x0003\x4003\x0009", adReason, cRecords, adStatus, pRecordset);
+    return _result;
 }
 
 inline HRESULT RecordsetEvents::RecordChangeComplete ( enum EventReasonEnum adReason, long cRecords, struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
-    return _com_dispatch_method(this, 0xc, DISPATCH_METHOD, VT_EMPTY, NULL, 
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0xc, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
         L"\x0003\x0003\x0009\x4003\x0009", adReason, cRecords, pError, adStatus, pRecordset);
+    return _result;
 }
 
 inline HRESULT RecordsetEvents::WillChangeRecordset ( enum EventReasonEnum adReason, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
-    return _com_dispatch_method(this, 0xd, DISPATCH_METHOD, VT_EMPTY, NULL, 
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0xd, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
         L"\x0003\x4003\x0009", adReason, adStatus, pRecordset);
+    return _result;
 }
 
 inline HRESULT RecordsetEvents::RecordsetChangeComplete ( enum EventReasonEnum adReason, struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
-    return _com_dispatch_method(this, 0xe, DISPATCH_METHOD, VT_EMPTY, NULL, 
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0xe, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
         L"\x0003\x0009\x4003\x0009", adReason, pError, adStatus, pRecordset);
+    return _result;
 }
 
 inline HRESULT RecordsetEvents::WillMove ( enum EventReasonEnum adReason, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
-    return _com_dispatch_method(this, 0xf, DISPATCH_METHOD, VT_EMPTY, NULL, 
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0xf, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
         L"\x0003\x4003\x0009", adReason, adStatus, pRecordset);
+    return _result;
 }
 
 inline HRESULT RecordsetEvents::MoveComplete ( enum EventReasonEnum adReason, struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
-    return _com_dispatch_method(this, 0x10, DISPATCH_METHOD, VT_EMPTY, NULL, 
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x10, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
         L"\x0003\x0009\x4003\x0009", adReason, pError, adStatus, pRecordset);
+    return _result;
 }
 
 inline HRESULT RecordsetEvents::EndOfRecordset ( VARIANT_BOOL * fMoreData, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
-    return _com_dispatch_method(this, 0x11, DISPATCH_METHOD, VT_EMPTY, NULL, 
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x11, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
         L"\x400b\x4003\x0009", fMoreData, adStatus, pRecordset);
+    return _result;
 }
 
 inline HRESULT RecordsetEvents::FetchProgress ( long Progress, long MaxProgress, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
-    return _com_dispatch_method(this, 0x12, DISPATCH_METHOD, VT_EMPTY, NULL, 
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x12, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
         L"\x0003\x0003\x4003\x0009", Progress, MaxProgress, adStatus, pRecordset);
+    return _result;
 }
 
 inline HRESULT RecordsetEvents::FetchComplete ( struct Error * pError, enum EventStatusEnum * adStatus, struct _Recordset * pRecordset ) {
-    return _com_dispatch_method(this, 0x13, DISPATCH_METHOD, VT_EMPTY, NULL, 
+    HRESULT _result = 0;
+    _com_dispatch_method(this, 0x13, DISPATCH_METHOD, VT_ERROR, (void*)&_result, 
         L"\x0009\x4003\x0009", pError, adStatus, pRecordset);
+    return _result;
 }
 
 //

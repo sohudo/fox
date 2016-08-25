@@ -1,9 +1,9 @@
-// Created by Microsoft (R) C/C++ Compiler Version 13.10.3077 (12ca3a3e).
+ï»¿// Created by Microsoft (R) C/C++ Compiler Version 14.00.23026.0 (f1bef2be).
 //
-// j:\69¿ª·¢[¿ª·¢Íê³É]\ÏµÍ³Ä£¿é\¿Í»§¶Ë×é¼ş\½çÃæ¿Ø¼ş\debug_unicode\imageole.tlh
+// f:\github\fox.git\trunk\69ç³»ç»Ÿæ¨¡å—\å®¢æˆ·ç«¯ç»„ä»¶\ç•Œé¢æ§ä»¶\debug_unicode\imageole.tlh
 //
 // C++ source equivalent of Win32 type library ImageOle.dll
-// compiler-generated file created 09/13/15 at 14:55:21 - DO NOT EDIT!
+// compiler-generated file created 08/26/16 at 00:33:17 - DO NOT EDIT!
 
 #pragma once
 #pragma pack(push, 8)
@@ -85,7 +85,7 @@ extern "C" const GUID __declspec(selectany) IID_IGifAnimator =
 // Wrapper method implementations
 //
 
-#include "j:\69¿ª·¢[¿ª·¢Íê³É]\ÏµÍ³Ä£¿é\¿Í»§¶Ë×é¼ş\½çÃæ¿Ø¼ş\debug_unicode\imageole.tli"
+#include "f:\github\fox.git\trunk\69ç³»ç»Ÿæ¨¡å—\å®¢æˆ·ç«¯ç»„ä»¶\ç•Œé¢æ§ä»¶\debug_unicode\imageole.tli"
 
 } // namespace ImageOleLib
 

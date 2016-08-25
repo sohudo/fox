@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
       <Configuration>Debug</Configuration>
@@ -7,10 +7,6 @@
     </ProjectConfiguration>
     <ProjectConfiguration Include="Release|Win32">
       <Configuration>Release</Configuration>
-      <Platform>Win32</Platform>
-    </ProjectConfiguration>
-    <ProjectConfiguration Include="Template|Win32">
-      <Configuration>Template</Configuration>
       <Platform>Win32</Platform>
     </ProjectConfiguration>
   </ItemGroup>
@@ -23,12 +19,14 @@
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
     <UseOfMfc>Dynamic</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
     <UseOfMfc>Dynamic</UseOfMfc>
     <CharacterSet>MultiByte</CharacterSet>
   </PropertyGroup>
@@ -43,25 +41,18 @@
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
-    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../../运行/Debug/</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug\</IntDir>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkIncremental>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">../../../运行/Release/</OutDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release\</IntDir>
-    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" />
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
-    <CodeAnalysisRuleSet Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">AllRules.ruleset</CodeAnalysisRuleSet>
-    <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
-    <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Template|Win32'" />
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">AoYiUpdate</TargetName>
-    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">AoYiUpdate</TargetName>
-    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</GenerateManifest>
+    <_ProjectFileVersion>14.0.23107.0</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>Debug\</OutDir>
+    <IntDir>Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>Release\</OutDir>
+    <IntDir>Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -70,8 +61,7 @@
       <MinimalRebuild>true</MinimalRebuild>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader />
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
     </ClCompile>
@@ -98,12 +88,12 @@
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>Create</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
     </ClCompile>
     <Link>
-      <OutputFile>../../../运行/Release/AoYiUpdate.exe</OutputFile>
+      <OutputFile>../../../../运行/Release/Unicode/AutoUpdate.exe</OutputFile>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Windows</SubSystem>
       <OptimizeReferences>true</OptimizeReferences>
@@ -122,10 +112,10 @@
     </ResourceCompile>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\MD5Checksum\MD5Checksum.cpp" />
     <ClCompile Include="AutoUpdate.cpp" />
     <ClCompile Include="AutoUpdateDlg.cpp" />
     <ClCompile Include="DownloadMgr.cpp" />
-    <ClCompile Include="..\MD5Checksum\MD5Checksum.cpp" />
     <ClCompile Include="SkinButton.cpp" />
     <ClCompile Include="SkinProgressCtrl.cpp" />
     <ClCompile Include="SkinStatic.cpp" />
@@ -136,11 +126,11 @@
     <ClCompile Include="TransparentHelper.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\MD5Checksum\MD5Checksum.h" />
+    <ClInclude Include="..\MD5Checksum\MD5ChecksumDefines.h" />
     <ClInclude Include="AutoUpdate.h" />
     <ClInclude Include="AutoUpdateDlg.h" />
     <ClInclude Include="DownloadMgr.h" />
-    <ClInclude Include="..\MD5Checksum\MD5Checksum.h" />
-    <ClInclude Include="..\MD5Checksum\MD5ChecksumDefines.h" />
     <ClInclude Include="Resource.h" />
     <ClInclude Include="SkinButton.h" />
     <ClInclude Include="SkinProgressCtrl.h" />
@@ -149,18 +139,23 @@
     <ClInclude Include="TransparentHelper.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\AutoUpdate.ico" />
-    <None Include="res\AutoUpdate.rc2" />
-    <None Include="res\button.bmp" />
-    <None Include="res\dialog_bk.bmp" />
-    <None Include="..\..\..\运行\release\LobbyRes\GamePlaza.ico" />
-    <None Include="res\progress_bk.bmp" />
-    <None Include="res\progress_tile.bmp" />
-    <None Include="res\ShowTip.BMP" />
-    <None Include="ReadMe.txt" />
+    <Image Include="..\..\..\运行\release\LobbyRes\GamePlaza.ico" />
+    <Image Include="res\AutoUpdate.ico" />
+    <Image Include="res\button.bmp" />
+    <Image Include="res\dialog_bk.bmp" />
+    <Image Include="res\GamePlaza.ico" />
+    <Image Include="res\progress_bk.bmp" />
+    <Image Include="res\progress_tile.bmp" />
+    <Image Include="res\ShowTip.BMP" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="AutoUpdate.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\AutoUpdate.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

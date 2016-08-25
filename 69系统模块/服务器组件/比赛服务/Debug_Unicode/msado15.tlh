@@ -1,9 +1,9 @@
-// Created by Microsoft (R) C/C++ Compiler Version 13.10.3077 (70c6b271).
+ï»¿// Created by Microsoft (R) C/C++ Compiler Version 14.00.23026.0 (bf399d53).
 //
-// j:\69¿ª·¢[¿ª·¢Íê³É]\ÏµÍ³Ä£¿é\·şÎñÆ÷×é¼ş\±ÈÈü·şÎñ\debug_unicode\msado15.tlh
+// f:\github\fox.git\trunk\69ç³»ç»Ÿæ¨¡å—\æœåŠ¡å™¨ç»„ä»¶\æ¯”èµ›æœåŠ¡\debug_unicode\msado15.tlh
 //
 // C++ source equivalent of Win32 type library MSADO15.DLL
-// compiler-generated file created 09/13/15 at 14:57:36 - DO NOT EDIT!
+// compiler-generated file created 08/26/16 at 00:32:49 - DO NOT EDIT!
 
 #pragma once
 #pragma pack(push, 8)
@@ -31,7 +31,6 @@ enum EditModeEnum;
 enum RecordStatusEnum;
 enum GetRowsOptionEnum;
 enum PositionEnum;
-typedef enum PositionEnum PositionEnum_Param;
 enum BookmarkEnum;
 enum MarshalOptionsEnum;
 enum AffectEnum;
@@ -39,7 +38,6 @@ enum ResyncEnum;
 enum CompareEnum;
 enum FilterGroupEnum;
 enum SearchDirectionEnum;
-typedef enum SearchDirectionEnum SearchDirection;
 enum PersistFormatEnum;
 enum StringFormatEnum;
 enum ConnectPromptEnum;
@@ -110,7 +108,6 @@ struct __declspec(uuid("00000569-0000-0010-8000-00aa006d2ea4"))
 /* dual interface */ Field;
 struct __declspec(uuid("0000054c-0000-0010-8000-00aa006d2ea4"))
 /* dual interface */ Field20;
-typedef long ADO_LONGPTR;
 struct __declspec(uuid("0000050c-0000-0010-8000-00aa006d2ea4"))
 /* dual interface */ _Parameter;
 struct __declspec(uuid("0000050d-0000-0010-8000-00aa006d2ea4"))
@@ -151,6 +148,9 @@ struct __declspec(uuid("00000283-0000-0010-8000-00aa006d2ea4"))
 struct __declspec(uuid("00000505-0000-0010-8000-00aa006d2ea4"))
 /* dual interface */ Field15;
 struct /* coclass */ Parameter;
+typedef enum PositionEnum PositionEnum_Param;
+typedef enum SearchDirectionEnum SearchDirection;
+typedef long ADO_LONGPTR;
 
 //
 // Smart pointer typedef declarations
@@ -3133,7 +3133,7 @@ _Record : _ADO
 // Wrapper method implementations
 //
 
-#include "j:\69¿ª·¢[¿ª·¢Íê³É]\ÏµÍ³Ä£¿é\·şÎñÆ÷×é¼ş\±ÈÈü·şÎñ\debug_unicode\msado15.tli"
+#include "f:\github\fox.git\trunk\69ç³»ç»Ÿæ¨¡å—\æœåŠ¡å™¨ç»„ä»¶\æ¯”èµ›æœåŠ¡\debug_unicode\msado15.tli"
 
 } // namespace ADOCG
 

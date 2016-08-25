@@ -82,6 +82,7 @@
     <OutDir>$(Configuration)\</OutDir>
     <IntDir>$(Configuration)\</IntDir>
     <LinkIncremental>true</LinkIncremental>
+    <PostBuildEventUseInBuild>false</PostBuildEventUseInBuild>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release_Unicode|Win32'">
     <OutDir>$(Configuration)\</OutDir>
@@ -253,6 +254,16 @@ copy /y ..\..\..\运行\Release\Unicode\$(TargetFileName) ..\..\..\发布组件\
   </ItemGroup>
   <ItemGroup>
     <None Include="res\Correspond.rc2" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\公共组件\服务核心\ServiceCore.vcxproj">
+      <Project>{b1320037-89dd-4f99-a628-69dc200dfa05}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
+    <ProjectReference Include="..\..\客户端组件\平台数据\PlatformData.vcxproj">
+      <Project>{cc596332-197e-407b-95f3-cb817470ed84}</Project>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

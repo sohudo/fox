@@ -162,7 +162,7 @@ BOOL CGameTableToolDlg::OnInitDialog()
 	{
 		nSeatCount=10;
 	}
-	for(i=0;i<nSeatCount;i++)
+	for(int i=0;i<nSeatCount;i++)
 	{
 		CString strSeatName;
 		strSeatName.Format(TEXT("%d"),i+1);

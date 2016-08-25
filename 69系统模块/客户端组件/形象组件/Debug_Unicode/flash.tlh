@@ -1,9 +1,9 @@
-// Created by Microsoft (R) C/C++ Compiler Version 13.10.3077 (462d1f4e).
+ï»¿// Created by Microsoft (R) C/C++ Compiler Version 14.00.23026.0 (6f86d52f).
 //
-// j:\69¿ª·¢[¿ª·¢Íê³É]\ÏµÍ³Ä£¿é\¿Í»§¶Ë×é¼ş\ĞÎÏó×é¼ş\debug_unicode\flash.tlh
+// f:\github\fox.git\trunk\69ç³»ç»Ÿæ¨¡å—\å®¢æˆ·ç«¯ç»„ä»¶\å½¢è±¡ç»„ä»¶\debug_unicode\flash.tlh
 //
 // C++ source equivalent of Win32 type library Flash.ocx
-// compiler-generated file created 09/13/15 at 14:56:29 - DO NOT EDIT!
+// compiler-generated file created 08/26/16 at 00:34:17 - DO NOT EDIT!
 
 #pragma once
 #pragma pack(push, 8)
@@ -533,9 +533,9 @@ IDispatchEx : IDispatch
         long id,
         unsigned long lcid,
         unsigned long dwFlags,
-        struct DISPPARAMS * pdp,
+        DISPPARAMS * pdp,
         VARIANT * pvarRes,
-        struct EXCEPINFO * pei,
+        EXCEPINFO * pei,
         struct IServiceProvider * pspCaller,
         unsigned int cvarRefArg,
         unsigned int * rgiRefArg,
@@ -571,9 +571,9 @@ IDispatchEx : IDispatch
         /*[in]*/ long id,
         /*[in]*/ unsigned long lcid,
         /*[in]*/ unsigned long dwFlags,
-        /*[in]*/ struct DISPPARAMS * pdp,
+        /*[in]*/ DISPPARAMS * pdp,
         /*[out]*/ VARIANT * pvarRes,
-        /*[out]*/ struct EXCEPINFO * pei,
+        /*[out]*/ EXCEPINFO * pei,
         /*[in]*/ struct IServiceProvider * pspCaller,
         /*[in]*/ unsigned int cvarRefArg,
         /*[in]*/ unsigned int * rgiRefArg,
@@ -631,7 +631,7 @@ extern "C" const GUID __declspec(selectany) CLSID_FlashObjectInterface =
 // Wrapper method implementations
 //
 
-#include "j:\69¿ª·¢[¿ª·¢Íê³É]\ÏµÍ³Ä£¿é\¿Í»§¶Ë×é¼ş\ĞÎÏó×é¼ş\debug_unicode\flash.tli"
+#include "f:\github\fox.git\trunk\69ç³»ç»Ÿæ¨¡å—\å®¢æˆ·ç«¯ç»„ä»¶\å½¢è±¡ç»„ä»¶\debug_unicode\flash.tli"
 
 } // namespace ShockwaveFlashObjects
 

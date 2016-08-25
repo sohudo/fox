@@ -1,9 +1,9 @@
-// Created by Microsoft (R) C/C++ Compiler Version 13.10.3077 (462d1f4e).
+ï»¿// Created by Microsoft (R) C/C++ Compiler Version 14.00.23026.0 (6f86d52f).
 //
-// j:\69¿ª·¢[¿ª·¢Íê³É]\ÏµÍ³Ä£¿é\¿Í»§¶Ë×é¼ş\ĞÎÏó×é¼ş\debug_unicode\flash.tli
+// f:\github\fox.git\trunk\69ç³»ç»Ÿæ¨¡å—\å®¢æˆ·ç«¯ç»„ä»¶\å½¢è±¡ç»„ä»¶\debug_unicode\flash.tli
 //
 // Wrapper implementations for Win32 type library Flash.ocx
-// compiler-generated file created 09/13/15 at 14:56:29 - DO NOT EDIT!
+// compiler-generated file created 08/26/16 at 00:34:17 - DO NOT EDIT!
 
 #pragma once
 
@@ -617,7 +617,7 @@ inline HRESULT IDispatchEx::GetDispID ( _bstr_t bstrName, unsigned long grfdex, 
     return _hr;
 }
 
-inline HRESULT IDispatchEx::RemoteInvokeEx ( long id, unsigned long lcid, unsigned long dwFlags, struct DISPPARAMS * pdp, VARIANT * pvarRes, struct EXCEPINFO * pei, struct IServiceProvider * pspCaller, unsigned int cvarRefArg, unsigned int * rgiRefArg, VARIANT * rgvarRefArg ) {
+inline HRESULT IDispatchEx::RemoteInvokeEx ( long id, unsigned long lcid, unsigned long dwFlags, DISPPARAMS * pdp, VARIANT * pvarRes, EXCEPINFO * pei, struct IServiceProvider * pspCaller, unsigned int cvarRefArg, unsigned int * rgiRefArg, VARIANT * rgvarRefArg ) {
     HRESULT _hr = raw_RemoteInvokeEx(id, lcid, dwFlags, pdp, pvarRes, pei, pspCaller, cvarRefArg, rgiRefArg, rgvarRefArg);
     if (FAILED(_hr)) _com_issue_errorex(_hr, this, __uuidof(this));
     return _hr;

@@ -1,9 +1,9 @@
-// Created by Microsoft (R) C/C++ Compiler Version 13.10.3077 (ab4973b0).
+Ôªø// Created by Microsoft (R) C/C++ Compiler Version 14.00.23026.0 (fedeac31).
 //
-// c:\documents and settings\administrator.leifeng-35ff9cc\◊¿√Ê\∞¬“Â\œµÕ≥ƒ£øÈ\∏¸–¬◊Èº˛\autoupdate\debug\msxml3.tlh
+// f:\github\fox.git\trunk\69Á≥ªÁªüÊ®°Âùó\ÂÆ¢Êà∑Á´ØÁªÑ‰ª∂\Êõ¥Êñ∞ÁªÑ‰ª∂\autoupdate\debug\msxml3.tlh
 //
 // C++ source equivalent of Win32 type library msxml3.dll
-// compiler-generated file created 07/29/15 at 16:42:28 - DO NOT EDIT!
+// compiler-generated file created 08/26/16 at 00:33:56 - DO NOT EDIT!
 
 #pragma once
 #pragma pack(push, 8)
@@ -22,7 +22,6 @@ struct __declspec(uuid("2933bf8f-7b36-11d2-b20e-00c04f983e60"))
 /* dual interface */ IXMLDOMImplementation;
 struct __declspec(uuid("2933bf80-7b36-11d2-b20e-00c04f983e60"))
 /* dual interface */ IXMLDOMNode;
-typedef enum tagDOMNodeType DOMNodeType;
 enum tagDOMNodeType;
 struct __declspec(uuid("2933bf82-7b36-11d2-b20e-00c04f983e60"))
 /* dual interface */ IXMLDOMNodeList;
@@ -132,23 +131,17 @@ struct __declspec(uuid("50ea08b2-dd1b-4664-9a50-c2f40f4bd79a"))
 /* dual interface */ ISchemaItemCollection;
 struct __declspec(uuid("50ea08b1-dd1b-4664-9a50-c2f40f4bd79a"))
 /* dual interface */ ISchemaStringCollection;
-typedef enum _SOMITEMTYPE SOMITEMTYPE;
 enum _SOMITEMTYPE;
 struct __declspec(uuid("50ea08b8-dd1b-4664-9a50-c2f40f4bd79a"))
 /* dual interface */ ISchemaType;
-typedef enum _SCHEMADERIVATIONMETHOD SCHEMADERIVATIONMETHOD;
 enum _SCHEMADERIVATIONMETHOD;
-typedef enum _SCHEMATYPEVARIETY SCHEMATYPEVARIETY;
 enum _SCHEMATYPEVARIETY;
-typedef enum _SCHEMAWHITESPACE SCHEMAWHITESPACE;
 enum _SCHEMAWHITESPACE;
 struct __declspec(uuid("50ea08b9-dd1b-4664-9a50-c2f40f4bd79a"))
 /* dual interface */ ISchemaComplexType;
 struct __declspec(uuid("50ea08bc-dd1b-4664-9a50-c2f40f4bd79a"))
 /* dual interface */ ISchemaAny;
-typedef enum _SCHEMAPROCESSCONTENTS SCHEMAPROCESSCONTENTS;
 enum _SCHEMAPROCESSCONTENTS;
-typedef enum _SCHEMACONTENTTYPE SCHEMACONTENTTYPE;
 enum _SCHEMACONTENTTYPE;
 struct __declspec(uuid("50ea08bb-dd1b-4664-9a50-c2f40f4bd79a"))
 /* dual interface */ ISchemaModelGroup;
@@ -158,7 +151,6 @@ struct __declspec(uuid("50ea08b0-dd1b-4664-9a50-c2f40f4bd79a"))
 /* dual interface */ IXMLDOMSchemaCollection2;
 struct __declspec(uuid("50ea08b6-dd1b-4664-9a50-c2f40f4bd79a"))
 /* dual interface */ ISchemaAttribute;
-typedef enum _SCHEMAUSE SCHEMAUSE;
 enum _SCHEMAUSE;
 struct __declspec(uuid("50ea08ba-dd1b-4664-9a50-c2f40f4bd79a"))
 /* dual interface */ ISchemaAttributeGroup;
@@ -181,7 +173,6 @@ struct __declspec(uuid("d4d4a0fc-3b73-11d1-b2b4-00c04fb92596"))
 struct __declspec(uuid("948c5ad3-c58d-11d0-9c0b-00c04fc99c8e"))
 /* interface */ IXMLError;
 struct _xml_error;
-typedef enum tagXMLEMEM_TYPE XMLELEM_TYPE;
 enum tagXMLEMEM_TYPE;
 struct __declspec(uuid("aa634fc7-5888-44a7-a257-3a47150d3a0e"))
 /* dual interface */ IXMLDOMSelection;
@@ -191,11 +182,8 @@ struct __declspec(uuid("310afa62-0575-11d2-9ca9-0060b0ec3d39"))
 /* dual interface */ IDSOControl;
 struct __declspec(uuid("ed8c108d-4349-11d2-91a4-00c04f7969e8"))
 /* dual interface */ IXMLHTTPRequest;
-typedef enum _SERVERXMLHTTP_OPTION SERVERXMLHTTP_OPTION;
 enum _SERVERXMLHTTP_OPTION;
-typedef enum _SXH_SERVER_CERT_OPTION SXH_SERVER_CERT_OPTION;
 enum _SXH_SERVER_CERT_OPTION;
-typedef enum _SXH_PROXY_SETTING SXH_PROXY_SETTING;
 enum _SXH_PROXY_SETTING;
 struct __declspec(uuid("2e9196bf-13ba-4dd4-91ca-6c571f281495"))
 /* dual interface */ IServerXMLHTTPRequest;
@@ -260,6 +248,18 @@ struct /* coclass */ MXNamespaceManager;
 struct /* coclass */ MXNamespaceManager40;
 struct /* coclass */ MXNamespaceManager60;
 struct /* coclass */ XMLDocument;
+typedef enum tagDOMNodeType DOMNodeType;
+typedef enum _SOMITEMTYPE SOMITEMTYPE;
+typedef enum _SCHEMADERIVATIONMETHOD SCHEMADERIVATIONMETHOD;
+typedef enum _SCHEMATYPEVARIETY SCHEMATYPEVARIETY;
+typedef enum _SCHEMAWHITESPACE SCHEMAWHITESPACE;
+typedef enum _SCHEMAPROCESSCONTENTS SCHEMAPROCESSCONTENTS;
+typedef enum _SCHEMACONTENTTYPE SCHEMACONTENTTYPE;
+typedef enum _SCHEMAUSE SCHEMAUSE;
+typedef enum tagXMLEMEM_TYPE XMLELEM_TYPE;
+typedef enum _SERVERXMLHTTP_OPTION SERVERXMLHTTP_OPTION;
+typedef enum _SXH_SERVER_CERT_OPTION SXH_SERVER_CERT_OPTION;
+typedef enum _SXH_PROXY_SETTING SXH_PROXY_SETTING;
 
 //
 // Smart pointer typedef declarations
@@ -2405,6 +2405,8 @@ IXMLAttribute : IDispatch
         /*[out,retval]*/ BSTR * v ) = 0;
 };
 
+#pragma pack(push, 4)
+
 struct _xml_error
 {
     unsigned int _nLine;
@@ -2416,6 +2418,8 @@ struct _xml_error
     unsigned long _reserved1;
     unsigned long _reserved2;
 };
+
+#pragma pack(pop)
 
 struct __declspec(uuid("948c5ad3-c58d-11d0-9c0b-00c04fc99c8e"))
 IXMLError : IUnknown
@@ -3149,7 +3153,7 @@ IXMLDOMNode : IDispatch
       virtual HRESULT __stdcall raw_hasChildNodes (
         /*[out,retval]*/ VARIANT_BOOL * hasChild ) = 0;
       virtual HRESULT __stdcall get_ownerDocument (
-        /*[out,retval]*/ struct IXMLDOMDocument * * DOMDocument ) = 0;
+        /*[out,retval]*/ struct IXMLDOMDocument * * XMLDOMDocument ) = 0;
       virtual HRESULT __stdcall raw_cloneNode (
         /*[in]*/ VARIANT_BOOL deep,
         /*[out,retval]*/ struct IXMLDOMNode * * cloneRoot ) = 0;
@@ -5129,7 +5133,7 @@ ISchemaNotation : ISchemaItem
 // Wrapper method implementations
 //
 
-#include "c:\documents and settings\administrator.leifeng-35ff9cc\◊¿√Ê\∞¬“Â\œµÕ≥ƒ£øÈ\∏¸–¬◊Èº˛\autoupdate\debug\msxml3.tli"
+#include "f:\github\fox.git\trunk\69Á≥ªÁªüÊ®°Âùó\ÂÆ¢Êà∑Á´ØÁªÑ‰ª∂\Êõ¥Êñ∞ÁªÑ‰ª∂\autoupdate\debug\msxml3.tli"
 
 } // namespace MSXML2
 

@@ -105,6 +105,9 @@
     <ClCompile Include="DlgUserInfo.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="DlgUserRecharge.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
     <ClCompile Include="DlgWhisper.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
@@ -270,6 +273,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="DlgUserInfo.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="DlgUserRecharge.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="DlgWhisper.h">
@@ -460,10 +466,10 @@
     <Image Include="Res\Plaza_logon\BT_CHECK.bmp">
       <Filter>资源文件</Filter>
     </Image>
-    <Image Include="Res\Platform_frame\BT_CLOSE.bmp">
+    <Image Include="Res\BT_CLOSE.bmp">
       <Filter>资源文件</Filter>
     </Image>
-    <Image Include="Res\BT_CLOSE.bmp">
+    <Image Include="Res\Platform_frame\BT_CLOSE.bmp">
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="Res\Platform_frame\Bt_close.png">
@@ -1180,16 +1186,16 @@
     <Image Include="Res\Plaza_match\TABLE_TL.bmp">
       <Filter>资源文件</Filter>
     </Image>
-    <Image Include="Res\Server_table\TABLE_TM.bmp">
-      <Filter>资源文件</Filter>
-    </Image>
     <Image Include="Res\Plaza_match\TABLE_TM.bmp">
       <Filter>资源文件</Filter>
     </Image>
-    <Image Include="Res\Plaza_match\TABLE_TR.bmp">
+    <Image Include="Res\Server_table\TABLE_TM.bmp">
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="Res\Server_table\TABLE_TR.bmp">
+      <Filter>资源文件</Filter>
+    </Image>
+    <Image Include="Res\Plaza_match\TABLE_TR.bmp">
       <Filter>资源文件</Filter>
     </Image>
     <Image Include="Res\Server_list\TYPE_ARROW.png">

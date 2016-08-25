@@ -79,35 +79,42 @@
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\AutoUpdate.ico">
+    <Image Include="res\AutoUpdate.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\AutoUpdate.rc2">
+    </Image>
+    <Image Include="res\button.bmp">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\button.bmp">
+    </Image>
+    <Image Include="res\dialog_bk.bmp">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\dialog_bk.bmp">
+    </Image>
+    <Image Include="..\..\..\运行\release\LobbyRes\GamePlaza.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="..\..\..\运行\release\LobbyRes\GamePlaza.ico">
+    </Image>
+    <Image Include="res\GamePlaza.ico">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\progress_bk.bmp">
+    </Image>
+    <Image Include="res\progress_bk.bmp">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\progress_tile.bmp">
+    </Image>
+    <Image Include="res\progress_tile.bmp">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\ShowTip.BMP">
+    </Image>
+    <Image Include="res\ShowTip.BMP">
       <Filter>Resource Files</Filter>
-    </None>
-    <None Include="ReadMe.txt" />
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="AutoUpdate.rc">
       <Filter>Resource Files</Filter>
     </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\AutoUpdate.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
   </ItemGroup>
 </Project>
